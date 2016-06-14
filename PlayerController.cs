@@ -18,7 +18,7 @@ public class PlayerController : MonoBehaviour {
 	{
 		float moveHorizontal = Input.GetAxis ("Horizontal");
 		float moveVertical = Input.GetAxis ("Vertical");
-		//define in input manager !!
+		//define "Turning" and "Height" in input manager !!
 		float turnShip = Input.GetAxis ("Turning");
 		float heightAdjustment = Input.GetAxis ("Height");
 

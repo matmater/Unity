@@ -8,6 +8,7 @@ public class PlayerController : MonoBehaviour {
 	public float AscDesc;
 
 	private Rigidbody rb;
+    private AudioSource engineSound;
 
 	void Start ()
 	{
@@ -34,6 +35,14 @@ public class PlayerController : MonoBehaviour {
 			print ("pew!");
 			//hit.transform.SendMessage ("Hit");
 		}
+        
+        //audio stuff
+		if (movement != new Vector3 (0.0f, 0.0f, 0.0f)) {
+			engineSound.pitch = 1.2f;
+		} 
+		else
+			engineSound.pitch = 1.0f;      
+      
 	
 	}
 }
